@@ -1,3 +1,1 @@
-﻿# labs-api-native-parser-parking-lot
-
-
+# Skeleton project for Swagger

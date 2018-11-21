@@ -1,23 +1,22 @@
 {
-  "name": "labs-api-native-parser-parking-lot",
-  "version": "0.0.0",
+  "name": "hello-world",
+  "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node app"
-  },
-  "description": "labs-api-native-parser-parking-lot",
-  "author": {
-    "name": "magnusweidmar"
-  },
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.0",
-    "debug": "^2.2.0",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0",
-    "pug": "^2.0.0-beta6",
-    "serve-favicon": "^2.3.0",
-    "swagger": "^0.7.5"
+    "express": "^4.12.3",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
   }
 }
