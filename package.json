@@ -1,22 +1,28 @@
 {
-  "name": "hello-world",
+  "name": "Labs-Api-Native-Parser-Parking-Lot",
   "version": "0.0.1",
   "private": true,
-  "description": "New Swagger API Project",
+  "description": "Parsing the native parking lot API",
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "Sogeti, Magnus Weidmar",
+  "license": "MIT",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.12.3",
-    "swagger-express-mw": "^0.1.0"
+    "flatted": "^2.0.0",
+    "swagger-express-mw": "^0.1.0",
+    "swagger-ui-express": "^4.0.1"
   },
   "devDependencies": {
-    "should": "^7.1.0",
-    "supertest": "^1.0.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "should": "^7.1.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "test": "swagger project test"
+    "start": "npm run build && node lib/app.js",
+    "build": "babel src --out-dir lib --source-maps inline --copy-files && babel --presets es2015 -d lib/ src",
+    "edit": "swagger_swagger_fileName=src/api/swagger/swagger.yaml swagger project edit",
+    "swagger": "swagger project start"
   }
 }
