@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>LabsApiNpParkingLot_BuildAndPackage</id>
-        <version>1.0.0</version>
+        <version>1</version>
         <description>Labs API NP Parking Lot</description>
         <authors>Sogeti</authors>
     </metadata>
