@@ -19,5 +19,5 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   const port = process.env.PORT || 3000;
   app.listen(port);
 
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerExpress.runner.swagger));
+  app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerExpress.runner.swagger));
 });
