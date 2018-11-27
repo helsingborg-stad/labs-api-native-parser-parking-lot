@@ -3,13 +3,12 @@ info:
   version: "0.0.1"
   title: Labs Api Native Parser Parking Lot
 # during dev, should point to your local machine
-host: localhost:3000
+host: labs-api-nppl-prod-webbapp.azurewebsites.net
 # basePath prefixes all resource paths 
 basePath: /
 # 
 schemes:
   # tip: remove http to make production-grade
-  - http
   - https
 # format of bodies a client can send (Content-Type)
 consumes:
@@ -61,8 +60,8 @@ definitions:
       name:
         type: "string"
       lat:
-        type: "string"
+        type: "number"
       lon:
-        type: "string"
+        type: "number"
       dist:
         type: "string"
