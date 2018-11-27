@@ -20,7 +20,7 @@
     "should": "^7.1.0"
   },
   "scripts": {
-    "start": "npm run build && node lib/app.js",
+    "start": "node lib/app.js",
     "build": "babel src --out-dir lib --source-maps inline --copy-files && babel --presets es2015 -d lib/ src",
     "edit": "swagger_swagger_fileName=src/api/swagger/swagger.yaml swagger project edit",
     "swagger": "swagger project start"
