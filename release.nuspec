@@ -9,6 +9,6 @@
     <files>
         <file src="lib/**/*.*" target="/" />
         <file src="node_modules/**/*.*" target="/" />
-        <file src="azuredeploy.json" target="azuredeploy.json" />
+        <file src="package.json" target="package.json" />
     </files>
 </package>
