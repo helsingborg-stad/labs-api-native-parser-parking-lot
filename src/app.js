@@ -1,7 +1,7 @@
 const SwaggerExpress = require('swagger-express-mw');
 const app = require('express')();
-const axios = require('axios');
 const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = YAML.load('./api/swagger/swagger.yaml');
 module.exports = app; // for testing
 
 const config = {
@@ -17,5 +17,5 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   const port = process.env.PORT || 3000;
   app.listen(port);
 
-  app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerExpress.runner.swagger));
+  app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 });
