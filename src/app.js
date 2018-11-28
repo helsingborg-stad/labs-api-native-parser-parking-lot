@@ -1,5 +1,3 @@
-'use strict';
-
 const SwaggerExpress = require('swagger-express-mw');
 const app = require('express')();
 const axios = require('axios');
