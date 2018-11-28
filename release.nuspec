@@ -13,5 +13,9 @@
         <file src="iisnode.yml" target="iisnode.yml" />
         <file src="azuredeploy.json" target="azuredeploy.json" />
         <file src="node_modules/**/*.*" target="/" />
+        <file src="swagger-ui.css" target="swagger-ui.css" />
+        <file src="swagger-ui-bundle.js" target="swagger-ui-bundle.js" />
+        <file src="swagger-ui-init.js" target="swagger-ui-init.js" />
+        <file src="swagger-ui-standalone-preset.js" target="swagger-ui-standalone-preset.js" />
     </files>
 </package>
