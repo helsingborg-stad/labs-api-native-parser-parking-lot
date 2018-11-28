@@ -10,5 +10,6 @@
         <file src="lib/**/*.*" target="/" />
         <file src="web.config" target="web.config" />
         <file src="azuredeploy.json" target="azuredeploy.json" />
+        <file src="node_modules/**/*.*" target="/" />
     </files>
 </package>
