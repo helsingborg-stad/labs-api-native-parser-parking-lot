@@ -6,7 +6,6 @@
         <description>Labs API NP Parking Lot</description>
         <authors>Sogeti</authors>
     </metadata>
-
     <files>
         <file src="lib/**/*.*" target="/" />
         <file src="web.config" target="web.config" />
