@@ -16,6 +16,6 @@
         <file src="node_modules/swagger-ui-dist/swagger-ui.css" target="swagger-ui.css" />
         <file src="node_modules/swagger-ui-dist/swagger-ui-bundle.js" target="swagger-ui-bundle.js" />
         <file src="node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js" target="swagger-ui-standalone-preset.js" />
-        <file src="node_modules/swagger-ui-dist/swagger-ui-init.js" target="swagger-ui-init.js" />
+        <file src="node_modules/swagger-ui-express/swagger-ui-init.js" target="swagger-ui-init.js" />
     </files>
 </package>
