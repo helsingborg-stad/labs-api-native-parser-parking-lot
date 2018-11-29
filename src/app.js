@@ -1,13 +1,14 @@
 const SwaggerExpress = require('swagger-express-mw');
-const app = require('express')();
-const swaggerUi = require('swagger-ui-express');
-const YAML = require('yamljs');
-const swaggerDocument = YAML.load('./api/swagger/swagger.yaml');
+const express = require('express');
+const app = express();
+const pathToSwaggerUi = require('swagger-ui-dist').absolutePath()
 module.exports = app; // for testing
 
 const config = {
   appRoot: __dirname // required config
 };
+
+const swaggerUi = express.static(pathToSwaggerUi)
 
 SwaggerExpress.create(config, function(err, swaggerExpress) {
   if (err) { throw err; }
@@ -18,5 +19,5 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   const port = process.env.PORT || 3000;
   app.listen(port);
 
-  app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+  app.use('/', swaggerUi);
 });
