@@ -12,10 +12,8 @@
     "express": "^4.12.3",
     "flatted": "^2.0.0",
     "swagger-express-mw": "^0.1.0",
-    "swagger-ui-express": "^4.0.1"
-  },
-  "engines": {
-    "node": "10.6.0"
+    "swagger-ui-express": "^4.0.1",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
